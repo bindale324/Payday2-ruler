@@ -247,9 +247,9 @@ local function killall()
         global_killall_on = false
     end)
 
-    if managers.mission then
-        managers.mission._fading_debug_output:script().log('Kill all ACTIVATED', Color.green)
-    end
+    -- if managers.mission then
+    --     managers.mission._fading_debug_output:script().log('Kill all ACTIVATED', Color.green)
+    -- end
 end
 
 local function ans_pager(unit)

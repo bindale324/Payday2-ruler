@@ -33,7 +33,7 @@
         },
         {
             "global": "DNCMenuAttack",
-            "script_path": "menu_impl/menu_attack.lua"
+            "script_path": "menu_impl/attack/menu_attack.lua"
         },
         {
             "global": "DNCMenuStealth",
@@ -41,7 +41,7 @@
         },
         {
             "global": "DNCMenuUtils",
-            "script_path": "menu_impl/menu_utils.lua"
+            "script_path": "menu_impl/utils/menu_utils.lua"
         }
     ],
     "hooks": [
