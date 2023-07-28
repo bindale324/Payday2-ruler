@@ -1,0 +1,33 @@
+{
+    "name": "DoNotCheat",
+    "description": "We are all told not to cheat when young, but will find the world full of cheats sooner or later.",
+    "author": "虚无，samuraibupt",
+    "version": "1.0.0",
+    "blt_version": 2,
+    "color": "255 0 0",
+    "image": "logo.jpg",
+    "keybinds":[
+        {
+
+        },
+        {
+
+        },
+    ],
+    "persist_scripts": [
+        {
+
+        },
+        {
+
+        },
+    ],
+    "hooks": [
+        {
+
+        },
+        {
+
+        },
+    ]
+}
