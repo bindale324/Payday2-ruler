@@ -36,10 +36,6 @@
             "script_path": "menu_impl/attack/menu_attack.lua"
         },
         {
-            "global": "DNCMenuStealth",
-            "script_path": "menu_impl/menu_stealth.lua"
-        },
-        {
             "global": "DNCMenuUtils",
             "script_path": "menu_impl/utils/menu_utils.lua"
         }

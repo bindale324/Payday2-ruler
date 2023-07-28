@@ -10,11 +10,6 @@ function DNC.menu.main()
                 in_game = true
             },
             {
-                text = "stealth",
-                open_menu = DNC.menu.stealth(),
-                in_game = true
-            },
-            {
                 text = "utils",
                 open_menu = DNC.menu.utils(),
                 in_game = true
