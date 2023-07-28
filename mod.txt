@@ -2,16 +2,16 @@
     "name": "DoNotCheat",
     "description": "We are all told not to cheat when young, but will find the world full of cheats sooner or later.",
     "author": "虚无，samuraibupt",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "blt_version": 2,
     "color": "255 0 0",
-    "image": "logo.jpg",
+    "image": "logo.png",
     "contact": "https://github.com/SamuraiBUPT/DoNotCheat"
     "keybinds":[
         {
             "keybind_id": "DNCKeybindMenuMain",
-            "name": "主菜单",
-            "description": "打开主菜单",
+            "name": "Main_Menu",
+            "description": "Open the main menu",
             "script_path": "keybinds/menu_call/main.lua",
             "run_in_menu": true,
             "run_in_game": true,
@@ -38,6 +38,10 @@
         {
             "global": "DNCMenuStealth",
             "script_path": "menu_impl/menu_stealth.lua"
+        },
+        {
+            "global": "DNCMenuUtils",
+            "script_path": "menu_impl/menu_utils.lua"
         }
     ],
     "hooks": [

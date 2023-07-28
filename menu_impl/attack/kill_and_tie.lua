@@ -151,11 +151,11 @@ local function killall()
         dofile("mods/DoNotCheat/menu_impl/attack/pagersnitch.lua")
     end
 
-    --kill sentries
-    if not stealth then
-        dofile("mods/DoNotCheat/menu_impl/attack/kill_sentries.lua")
-        dofile("mods/DoNotCheat/menu_impl/attack/kill_sentries.lua")
-    end
+    -- --kill sentries
+    -- if not stealth then
+    --     dofile("mods/DoNotCheat/menu_impl/attack/kill_sentries.lua")
+    --     dofile("mods/DoNotCheat/menu_impl/attack/kill_sentries.lua")
+    -- end
 
     --kills cams
     if (id_level ~= 'tag') then
@@ -216,6 +216,7 @@ local function killall()
             end
         end)
     end
+
 
     --Kills enemies
     for i = 0, 2 do
@@ -282,15 +283,18 @@ killall()
 
 DNC.logMessage("Police killed and civilians tied", DNC.loglevel.INFO)
 
-
-for _, unit in pairs(managers.interaction._interactive_units) do
-    if not alive(unit) then
-        break
-    end
-    local interaction = unit:interaction()
-    if interaction and interaction.tweak_data == 'corpse_alarm_pager' then
-        ans_pager(unit)
+local function ans_pager_activated()
+    for _, unit in pairs(managers.interaction._interactive_units) do
+        if not alive(unit) then
+            break
+        end
+        local interaction = unit:interaction()
+        if interaction and interaction.tweak_data == 'corpse_alarm_pager' then
+            ans_pager(unit)
+        end
     end
 end
+
+DelayedCalls:Add("ans_pager_activated", 2, ans_pager_activated)
 
 DNC.logMessage("Pager answered", DNC.loglevel.INFO)
