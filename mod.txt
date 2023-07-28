@@ -6,28 +6,40 @@
     "blt_version": 2,
     "color": "255 0 0",
     "image": "logo.jpg",
+    "contact": "https://github.com/SamuraiBUPT/DoNotCheat"
     "keybinds":[
         {
-
-        },
-        {
-
-        },
+            "keybind_id": "DNCKeybindMenuMain",
+            "name": "主菜单",
+            "description": "打开主菜单",
+            "script_path": "keybinds/menu_call/main.lua",
+            "run_in_menu": true,
+            "run_in_game": true,
+            "localized": false
+        }
     ],
     "persist_scripts": [
         {
-
+            "global": "DNCStruct",
+            "script_path": "base/donotcheat.lua"
         },
         {
-
+            "global": "DNCLogMessage",
+            "script_path": "base/dnclogtool.lua"
         },
+        {
+            "global": "DNCMenuMain",
+            "script_path": "menu_impl/menu_main.lua"
+        },
+        {
+            "global": "DNCMenuAttack",
+            "script_path": "menu_impl/menu_attack.lua"
+        },
+        {
+            "global": "DNCMenuStealth",
+            "script_path": "menu_impl/menu_stealth.lua"
+        }
     ],
     "hooks": [
-        {
-
-        },
-        {
-
-        },
     ]
 }
