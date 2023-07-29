@@ -271,4 +271,4 @@ end
 
 DelayedCalls:Add("ans_pager_activated", 2.5, ans_pager_activated)
 
-DNC.logMessage("Pager answered", DNC.loglevel.INFO)
+DNC.logMessage("Pager will be answered in 2.5 s", DNC.loglevel.INFO)

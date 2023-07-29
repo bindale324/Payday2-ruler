@@ -16,6 +16,15 @@
             "run_in_menu": true,
             "run_in_game": true,
             "localized": false
+        },
+        {
+            "keybind_id": "DNCKeybindTelePort",
+            "name": "Teleport",
+            "description": "tp to somewhere you like",
+            "script_path": "keybinds/teleport.lua",
+            "run_in_menu": false,
+            "run_in_game": true,
+            "localized": false
         }
     ],
     "persist_scripts": [

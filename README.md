@@ -8,6 +8,12 @@ This mode integrade bunch of lua scripts from experienced mod developers, and I 
 
 If you think this repository helps you a lot, could you please give me a star?
 
+# Dependency
+
+Latest SuperBLT.
+
+**Caution: The BeardLib is not required!** You don't have to install BeardLib to use our mod.
+
 # How to use
 
 The release version is on the left of this page, you can download one release `.zip` file to install.
@@ -15,4 +21,4 @@ The release version is on the left of this page, you can download one release `.
 + download the one from versions you like
 + extract it to `mods` folder
 
-and you have finished the mod installation.
+and you have finished the mod installation, enjoy yourself!
