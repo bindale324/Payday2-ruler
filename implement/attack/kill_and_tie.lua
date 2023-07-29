@@ -90,33 +90,7 @@ local function dmg_melee(unit, player_unit)
     }
     unit:character_damage():damage_fire(action_data)
 end
---[[local function dmg_melee(unit, player_unit)
-	local action_data = {
-		damage = 1,
-		damage_effect = unit:character_damage()._HEALTH_INIT,
-		attacker_unit = player_unit or (managers.player._players[1]),
-		attack_dir = Vector3(0,0,0),
-		variant = "counter_tased", --"counter_tased","taser_tased",    "expl_hurt" "fire","explosion","melee","bullet""stun""dot""healed","graze","poison_hurt","dmg_rcv","light_hurt",	"hurt",	"heavy_hurt","death","shield_knock","knock_down","stagger"
-		name_id = 'spoon',
-		critical_hit = true,
-		col_ray = {
-			position = unit:position(),
-			body = unit:body( "body" ),
-		}
-	}
-	unit:character_damage():damage_melee(action_data)
-	--unit:character_damage():damage_tase(action_data)
-	--managers.enemy:get_nearby_medic(unit):character_damage():heal_unit(managers.player:player_unit())
-	if not alive(unit) then
-		return
-	end
-	managers.network:session():send_to_peers_synched("remove_unit", unit)
-	if unit:id() ~= -1 then
-		Network:detach_unit(unit)
-	end
-	unit:inventory():destroy_all_items()
-	unit:set_slot(0)
-end--]]
+
 
 local function check_kill(unit, unit_tweak, player_unit)
     if not is_hostage(unit) or (unit_tweak == "bank_manager") then
@@ -295,6 +269,6 @@ local function ans_pager_activated()
     end
 end
 
-DelayedCalls:Add("ans_pager_activated", 2, ans_pager_activated)
+DelayedCalls:Add("ans_pager_activated", 2.5, ans_pager_activated)
 
 DNC.logMessage("Pager answered", DNC.loglevel.INFO)

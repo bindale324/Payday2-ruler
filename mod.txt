@@ -41,5 +41,9 @@
         }
     ],
     "hooks": [
+        {
+            "hook_id" : "lib/managers/dialogs/genericdialog",
+            "script_path" : "hooks/genericdialog.lua"
+        }
     ]
 }
