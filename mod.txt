@@ -12,7 +12,7 @@
             "keybind_id": "DNCKeybindMenuMain",
             "name": "Main_Menu",
             "description": "Open the main menu",
-            "script_path": "keybinds/menu_call/main.lua",
+            "script_path": "keybinds/main.lua",
             "run_in_menu": true,
             "run_in_game": true,
             "localized": false
@@ -21,23 +21,23 @@
     "persist_scripts": [
         {
             "global": "DNCStruct",
-            "script_path": "base/donotcheat.lua"
+            "script_path": "persistent/core/donotcheat.lua"
         },
         {
             "global": "DNCLogMessage",
-            "script_path": "base/dnclogtool.lua"
+            "script_path": "persistent/core/dnclogtool.lua"
         },
         {
             "global": "DNCMenuMain",
-            "script_path": "menu_impl/menu_main.lua"
+            "script_path": "persistent/menu/menu_main.lua"
         },
         {
             "global": "DNCMenuAttack",
-            "script_path": "menu_impl/attack/menu_attack.lua"
+            "script_path": "persistent/menu/menu_attack.lua"
         },
         {
             "global": "DNCMenuUtils",
-            "script_path": "menu_impl/utils/menu_utils.lua"
+            "script_path": "persistent/menu/menu_utils.lua"
         }
     ],
     "hooks": [

@@ -148,7 +148,7 @@ local function killall()
     global_killall_on = true
 
     if not global_pager_snitch_toggle then
-        dofile("mods/DoNotCheat/menu_impl/attack/pagersnitch.lua")
+        dofile("mods/DoNotCheat/implement/attack/pagersnitch.lua")
     end
 
     -- --kill sentries
@@ -242,7 +242,7 @@ local function killall()
 
     DelayedCalls:Add("toggle_steal", 2.1, function()
         if global_pager_snitch_toggle then
-            dofile("mods/DoNotCheat/menu_impl/attack/pagersnitch.lua")
+            dofile("mods/DoNotCheat/implement/attack/pagersnitch.lua")
         end
         global_killall_on = false
     end)

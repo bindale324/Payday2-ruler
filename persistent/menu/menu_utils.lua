@@ -22,7 +22,7 @@ function DNC.menu.utils()
 end
 
 function DNC.utils.convert_all_enemies()
-    dofile("mods/DoNotCheat/menu_impl/utils/convert_all_enemies.lua")
+    dofile("mods/DoNotCheat/implement/utils/convert_all_enemies.lua")
 end
 
 DNCMenuUtils = true

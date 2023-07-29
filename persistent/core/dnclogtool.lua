@@ -5,7 +5,7 @@ DNC.loglevel = {
 }
 
 function DNC.logMessage(msg, color)
-    managers.mission._fading_debug_output:script().log(msg, color)
+    managers.chat:_receive_message(1, "DNC", tostring(msg), color)
 end
 
 DNCLogMessage = true

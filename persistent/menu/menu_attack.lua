@@ -30,7 +30,7 @@ function DNC.menu.attack()
 end
 
 function DNC.attack.kill_and_tie()
-    dofile("mods/DoNotCheat/menu_impl/attack/kill_and_tie.lua")
+    dofile("mods/DoNotCheat/implement/attack/kill_and_tie.lua")
 end
 
 function DNC.attack.victory_immediately()
