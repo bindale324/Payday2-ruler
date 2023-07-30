@@ -7,7 +7,14 @@ function DNC.menu.utils()
         button_list = {
             {
                 text = "convert all enemies",
-                callback_func = DNC.utils.convert_all_enemies
+                callback_func = DNC.utils.convert_all_enemies,
+                in_game = true
+            },
+            {
+                text = "carry bags",
+                callback_func = DNC.utils.carry_bags,
+                in_game = true,
+                close_button = true
             },
             {
                 no_text = true,
@@ -23,6 +30,10 @@ end
 
 function DNC.utils.convert_all_enemies()
     dofile("mods/DoNotCheat/implement/utils/convert_all_enemies.lua")
+end
+
+function DNC.utils.carry_bags()
+    dofile("mods/DoNotCheat/implement/utils/carrybags/carrystacker_client.lua")
 end
 
 DNCMenuUtils = true

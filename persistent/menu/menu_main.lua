@@ -10,9 +10,13 @@ function DNC.menu.main()
                 in_game = true
             },
             {
-                text = "utils",
-                open_menu = DNC.menu.utils(),
+                text = "player",
+                open_menu = DNC.menu.player(),
                 in_game = true
+            },
+            {
+                text = "utils",
+                open_menu = DNC.menu.utils()
             },
             {
                 no_text = true,

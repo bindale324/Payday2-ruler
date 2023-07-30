@@ -7,16 +7,14 @@ function DNC.menu.attack()
         button_list = {
             {
                 text = "kill and tie", -- this can kill all enemies in the map, and tie civilians and also answer the pager.
-                callback_func = DNC.attack.kill_and_tie
+                callback_func = DNC.attack.kill_and_tie,
+                close_button = true
             },
             {
                 text = "victory immediately", -- this can make the game victory immediately.
-                callback_func = DNC.attack.victory_immediately
+                callback_func = DNC.attack.victory_immediately,
+                close_button = true
             },
-            -- {
-            --     text = "kill the fort", -- kill the fort
-            --     callback_func = DNC.attack.kill_the_fort
-            -- },
             {
                 no_text = true,
                 no_selection = true
@@ -46,9 +44,5 @@ function DNC.attack.victory_immediately()
     end
     DNC.logMessage("You have won the game!", DNC.loglevel.INFO)
 end
-
--- function DNC.attack.kill_the_fort()
---     dofile("mods/DoNotCheat/menu_impl/attack/kill_the_fort.lua")
--- end
 
 DNCMenuAttack = true

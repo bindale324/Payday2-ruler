@@ -47,6 +47,10 @@
         {
             "global": "DNCMenuUtils",
             "script_path": "persistent/menu/menu_utils.lua"
+        },
+        {
+            "global": "DNCMenuPlayer",
+            "script_path": "persistent/menu/menu_player.lua"
         }
     ],
     "hooks": [
