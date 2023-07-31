@@ -4,7 +4,7 @@
 -- In order to facilitate management, we put all persistent scripts to the `persistent` folder.
 
 DNC = {} -- [struct], inside is the whole variables and functions of this mod
-DNC.version = "1.0.0"
+DNC.version = "1.0.3"
 
 DNC.menu = {}
 

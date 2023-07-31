@@ -1,18 +1,22 @@
+<div>
+    <img src="img/cover.jpg">
+</div>
+
 # Payday2 mod - Do Not Cheat Repository
 
-We published our mod source code for everyone to use.
+We published our mod source code for everyone to use, especially for those who want to rule the game.
 
-It's 2023.7.28 now, more than 10 years after payday2 launched and soon there will be payday3.
+On 2023.7.28 we built this repository, more than 10 years after payday2 launched and soon there will be payday3. The reason we stick to it is that there are many mature cheating scripts to use and modify, I also add some extra functions for better cheating expreience.
 
-This mode integrade bunch of lua scripts from experienced mod developers, and I offered a menu to use them.
+This mod integrade bunch of lua scripts from experienced mod developers and myself, and I offered a menu to use them. **Convinent, fast, easy-install** can be our keywords.
 
-If you think this repository helps you a lot, could you please give me a star?
+If you think this repository helps you, could you please give me a star?
 
 # Dependency
 
-Latest SuperBLT.
+Latest [SuperBLT](https://superblt.znix.xyz/).
 
-**Caution: The BeardLib is not required!** You don't have to install BeardLib to use our mod.
+**Caution: The BeardLib is NOT required!** You don't have to install BeardLib to use our mod.
 
 # How to use
 
