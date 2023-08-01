@@ -3,15 +3,15 @@ DNC.utils = {}
 function DNC.menu.utils()
     return {
         custom = true,
-        title = "utility List",
+        title = DNC.menu_item[DNC.lan]["utility_List"],
         button_list = {
             {
-                text = "convert all enemies",
+                text = DNC.menu_item[DNC.lan]["convert_all_enemies"],
                 callback_func = DNC.utils.convert_all_enemies,
                 in_game = true
             },
             {
-                text = "carry bags",
+                text = DNC.menu_item[DNC.lan]["carry_bags"],
                 callback_func = DNC.utils.carry_bags,
                 in_game = true,
                 close_button = true
@@ -21,7 +21,7 @@ function DNC.menu.utils()
                 no_selection = true
             },
             {
-                text = "close",
+                text = DNC.menu_item[DNC.lan]["close"],
                 cancel_button = true
             }
         }

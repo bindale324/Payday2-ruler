@@ -13,7 +13,7 @@ if not rawget(_G, "CarryScript") then
 		if not alive(unit) then
 			-- managers.mission._fading_debug_output:script().log(
 			--     string.format("Cant open menu because sentry is/was on the map"), Color.green)
-			DNC.logMessage("Cant open menu because sentry is/was on the map", DNC.loglevel.WARN)
+			DNC.logMessageInGame("Cant open menu because sentry is/was on the map", DNC.loglevel.WARN)
 			dofile("mods/DoNotCheat/implement/utils/carrybags/carrystacker.lua")
 			return
 		end

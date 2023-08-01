@@ -3,14 +3,14 @@ DNC.player = {}
 function DNC.menu.player()
     return {
         custom = true,
-        title = "Player Board",
+        title = DNC.menu_item[DNC.lan]["Player_Board"],
         button_list = {
             {
-                text = "Aimbot", -- aimbot by Mayzone
+                text = DNC.menu_item[DNC.lan]["Aimbot"], -- aimbot by Mayzone
                 callback_func = DNC.player.aimbot
             },
             {
-                text = "Player Control", -- aimbot by Mayzone
+                text = DNC.menu_item[DNC.lan]["Player_Control"], -- aimbot by Mayzone
                 callback_func = DNC.player.player_control,
                 close_button = true
             },
@@ -19,7 +19,7 @@ function DNC.menu.player()
                 no_selection = true
             },
             {
-                text = "close",
+                text = DNC.menu_item[DNC.lan]["close"],
                 cancel_button = true
             }
         }

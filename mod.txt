@@ -30,33 +30,37 @@
     "persist_scripts": [
         {
             "global": "DNCStruct",
-            "script_path": "persistent/core/donotcheat.lua"
+            "script_path": "persist/core/donotcheat.lua"
         },
         {
             "global": "DNCLogMessage",
-            "script_path": "persistent/core/dnclogtool.lua"
+            "script_path": "persist/core/dnclogtool.lua"
         },
         {
             "global": "DNCMenuMain",
-            "script_path": "persistent/menu/menu_main.lua"
+            "script_path": "persist/menu/menu_main.lua"
         },
         {
             "global": "DNCMenuAttack",
-            "script_path": "persistent/menu/menu_attack.lua"
+            "script_path": "persist/menu/menu_attack.lua"
         },
         {
             "global": "DNCMenuUtils",
-            "script_path": "persistent/menu/menu_utils.lua"
+            "script_path": "persist/menu/menu_utils.lua"
         },
         {
             "global": "DNCMenuPlayer",
-            "script_path": "persistent/menu/menu_player.lua"
+            "script_path": "persist/menu/menu_player.lua"
         }
     ],
     "hooks": [
         {
             "hook_id" : "lib/managers/dialogs/genericdialog",
             "script_path" : "hooks/genericdialog.lua"
+        },
+        {
+            "hook_id": "core/lib/setups/coresetup",
+            "script_path": "hooks/setup.lua"
         }
     ]
 }

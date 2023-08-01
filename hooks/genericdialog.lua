@@ -1,7 +1,7 @@
 core:module("SystemMenuManager")
 require("lib/managers/dialogs/Dialog")
 
-local function logMessage(msg, color)
+local function logMessageOutGame(msg, color)
     managers.mission._fading_debug_output:script().log(msg, color)
 end
 
@@ -31,19 +31,19 @@ function GenericDialog:button_pressed_callback()
 
     if button.in_game then
         if not Utils:IsInHeist() then
-            logMessage("in-game only", Color.red)
+            logMessageOutGame("in-game only", Color.red)
             return
         end
     end
     if button.out_game then
         if Utils:IsInGameState() then
-            logMessage("out-game only", Color.red)
+            logMessageOutGame("out-game only", Color.red)
             return
         end
     end
     if button.host then
         if not Network:is_server() then
-            logMessage("host only", Color.red)
+            logMessageOutGame("host only", Color.red)
             return
         end
     end

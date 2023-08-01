@@ -94,4 +94,4 @@ else
     end
 end
 
-DNC.logMessage("Convert Enemies finished.", DNC.loglevel.INFO)
+DNC.logMessageInGame("Convert Enemies finished.", DNC.loglevel.INFO)

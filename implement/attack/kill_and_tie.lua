@@ -4,6 +4,8 @@ local id_level = managers.job:current_level_id()
 local stealth = managers.groupai:state():whisper_mode()
 local player_unit = managers.player:player_unit()
 
+-- TODO: make this script work in loop with delayed calls
+
 local function is_playing()
     if not BaseNetworkHandler
     then
@@ -255,7 +257,7 @@ end
 
 killall()
 
-DNC.logMessage("Police killed and civilians tied", DNC.loglevel.INFO)
+DNC.logMessageInGame("Police killed and civilians tied", DNC.loglevel.INFO)
 
 local function ans_pager_activated()
     for _, unit in pairs(managers.interaction._interactive_units) do
@@ -271,4 +273,4 @@ end
 
 DelayedCalls:Add("ans_pager_activated", 2.5, ans_pager_activated)
 
-DNC.logMessage("Pager will be answered in 2.5 s", DNC.loglevel.INFO)
+DNC.logMessageInGame("Pager will be answered in 2.5 s", DNC.loglevel.INFO)

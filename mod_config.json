@@ -1,0 +1,35 @@
+{
+    "language": "zh",
+    "menu_convert": {
+        "en": {
+            "attack": "Attack",
+            "player": "Player",
+            "utils": "Utils",
+            "close": "Close",
+            "attack_list": "Attack List",
+            "kill_and_tie": "Kill and Tie",
+            "victory_immediately": "Victory Immediately",
+            "Player_Board": "Player Board",
+            "Aimbot": "Aimbot",
+            "Player_Control": "Player Control",
+            "utility_List": "Utility List",
+            "convert_all_enemies": "Convert All Enemies",
+            "carry_bags": "Carry Bags"
+        },
+        "zh": {
+            "attack": "强攻",
+            "player": "角色",
+            "utils": "综合",
+            "close": "关闭",
+            "attack_list": "强攻菜单",
+            "kill_and_tie": "杀死所有人+捆绑人质+回复对讲机",
+            "victory_immediately": "立即胜利",
+            "Player_Board": "角色菜单",
+            "Aimbot": "自瞄",
+            "Player_Control": "玩家控制",
+            "utility_List": "其它菜单",
+            "convert_all_enemies": "转换所有敌人",
+            "carry_bags": "更多带包方法"
+        }
+    }
+}

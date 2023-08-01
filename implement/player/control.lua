@@ -1,4 +1,4 @@
-dofile(ModPath .. "persistent/core/dnclogtool.lua")
+dofile(ModPath .. "persist/core/dnclogtool.lua")
 
 function in_game()
 	if not game_state_machine then return false end
@@ -6,7 +6,7 @@ function in_game()
 end
 
 if not in_game() then
-	DNC.logMessage("You are not in game!", DNC.loglevel.ERROR)
+	DNC.logMessageOutGame("You are not in game!", DNC.loglevel.ERROR)
 	return
 end
 

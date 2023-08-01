@@ -3,15 +3,15 @@ DNC.attack = {}
 function DNC.menu.attack()
     return {
         custom = true,
-        title = "Attack List",
+        title = DNC.menu_item[DNC.lan]["attack_list"],
         button_list = {
             {
-                text = "kill and tie", -- this can kill all enemies in the map, and tie civilians and also answer the pager.
+                text = DNC.menu_item[DNC.lan]["kill_and_tie"], -- this can kill all enemies in the map, and tie civilians and also answer the pager.
                 callback_func = DNC.attack.kill_and_tie,
                 close_button = true
             },
             {
-                text = "victory immediately", -- this can make the game victory immediately.
+                text = DNC.menu_item[DNC.lan]["victory_immediately"], -- this can make the game victory immediately.
                 callback_func = DNC.attack.victory_immediately,
                 close_button = true
             },
@@ -20,7 +20,7 @@ function DNC.menu.attack()
                 no_selection = true
             },
             {
-                text = "close",
+                text = DNC.menu_item[DNC.lan]["close"],
                 cancel_button = true
             }
         }
@@ -42,7 +42,7 @@ function DNC.attack.victory_immediately()
                 personal_win = true,
             })
     end
-    DNC.logMessage("You have won the game!", DNC.loglevel.INFO)
+    DNC.logMessageInGame("You have won the game!", DNC.loglevel.INFO)
 end
 
 DNCMenuAttack = true
