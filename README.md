@@ -2,7 +2,7 @@
     <img src="img/cover.jpg">
 </div>
 
-# Payday2 mod - Do Not Cheat Repository
+# Payday2 mod - Ruler Repository
 
 We published our mod source code for everyone to use, especially for those who want to rule the game.
 
